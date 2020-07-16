@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="600px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginRight="20px"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热成像设置"/>
+
+    <LinearLayout
+        android:layout_margin="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="顶部间距："
+            android:textSize="@dimen/show_size"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/top_data"
+            android:text="0"
+            android:textSize="@dimen/show_size"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <SeekBar
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:progress="0"
+        android:max="320"
+        android:id="@+id/top_seek"
+        android:layout_width="match_parent"
+        android:layout_height="45px"/>
+
+    <LinearLayout
+        android:layout_margin="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="顶底部间距："
+            android:textSize="@dimen/show_size"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="320"
+            android:id="@+id/bom_data"
+            android:textSize="@dimen/show_size"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/bom_seek"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:progress="320"
+        android:max="320"
+        android:layout_width="match_parent"
+        android:layout_height="45px"/>
+
+    <LinearLayout
+        android:layout_margin="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="左部间距："
+            android:textSize="@dimen/show_size"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="0"
+            android:id="@+id/left_data"
+            android:textSize="@dimen/show_size"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/left_seek"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:progress="0"
+        android:max="240"
+        android:layout_width="match_parent"
+        android:layout_height="45px"/>
+
+    <LinearLayout
+        android:layout_margin="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="右部间距："
+            android:textSize="@dimen/show_size"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="240"
+            android:id="@+id/right_data"
+            android:textSize="@dimen/show_size"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/right_seek"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:progress="240"
+        android:max="240"
+        android:layout_width="match_parent"
+        android:layout_height="45px"/>
+
+    <TextView
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:text="温度补偿值："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/temp_pc"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_margin="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/set_camera_save"
+            android:text="发送"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70px"/>
+        <Button
+            android:id="@+id/set_camera_cancel"
+            android:layout_marginLeft="20px"
+            android:text="返回"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70px"/>
+    </LinearLayout>
+
+
+</LinearLayout>

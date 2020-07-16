@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="600px"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/light_title_mode"
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="闪光灯模式："/>
+
+    <RadioGroup
+        android:id="@+id/light_mode_group"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+        <RadioButton
+            android:text="关闭"
+            android:id="@+id/close_light"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textSize="@dimen/show_size"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/open_light"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:text="开启"
+            android:textSize="@dimen/show_size"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:text="自动检测"
+            android:id="@+id/check_light"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textSize="@dimen/show_size"
+            android:layout_height="match_parent"/>
+    </RadioGroup>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/light_title_data"
+            android:layout_marginLeft="20px"
+            android:textSize="@dimen/title_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度阀值："/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="20px"
+            android:id="@+id/light_data"
+            android:text="000"
+            android:textSize="@dimen/show_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <SeekBar
+        android:layout_margin="20px"
+        android:id="@+id/light_seek"
+        android:max="60000"
+        android:min="0"
+        android:layout_width="match_parent"
+        android:layout_height="80px"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Button
+            android:id="@+id/light_check"
+            android:background="@drawable/radiobutton"
+            android:textColor="#000000"
+            android:text="确定"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/light_cancel"
+            android:background="@drawable/cancel"
+            android:textColor="#000000"
+            android:text="取消"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

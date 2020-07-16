@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minWidth="600px"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="40px"
+        android:id="@+id/data_setting"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:tag="0"
+        android:textSize="@dimen/button_size"
+
+        android:text="环境设置"/>
+    <Button
+        android:layout_margin="10px"
+
+        android:tag="1"
+        android:id="@+id/face_setting"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:textSize="@dimen/button_size"
+
+        android:text="人脸设置" />
+    <Button
+        android:layout_margin="10px"
+        android:tag="2"
+        android:id="@+id/light_setting"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:textSize="@dimen/button_size"
+        android:text="灯光设置" />
+    <Button
+        android:layout_margin="10px"
+        android:tag="4"
+        android:id="@+id/language"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:textSize="@dimen/button_size"
+        android:text="语言设置" />
+    <Button
+        android:layout_margin="10px"
+        android:tag="3"
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:textSize="@dimen/button_size"
+        android:text="恢复出厂设置" />
+
+    <Button
+        android:layout_margin="10px"
+        android:tag="5"
+        android:id="@+id/music"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:textSize="@dimen/button_size"
+        android:text="音量设置" />
+
+    <Button
+        android:layout_margin="10px"
+        android:tag="6"
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:textSize="@dimen/button_size"
+        android:text="显示设置" />
+
+
+    <Button
+        android:tag="-1"
+        android:id="@+id/dialog_exit"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="20px"
+        android:background="#CCCCCC"
+        android:textColor="#000000"
+        android:textSize="@dimen/button_size"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:text="退出"
+        />
+
+</LinearLayout>

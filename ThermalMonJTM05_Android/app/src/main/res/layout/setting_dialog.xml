@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="600px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_title_pc"
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="温度偏差值："/>
+    <EditText
+        android:inputType="numberSigned|numberDecimal"
+
+        android:id="@+id/pc_ed"
+        android:text="0"
+        android:layout_marginBottom="10px"
+
+        android:textSize="@dimen/show_size"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_title_hc"
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:text="环境因素："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="numberSigned|numberDecimal"
+
+        android:id="@+id/ambient_ed"
+        android:text="0"
+        android:textSize="@dimen/show_size"
+        android:layout_marginBottom="10px"
+
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_title_low"
+
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:text="低温下限值："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/low_temp_ed"
+        android:text="0"
+        android:textSize="@dimen/show_size"
+        android:layout_marginBottom="10px"
+
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_title_hig"
+
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:text="高温报警值："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/danger_ed"
+        android:text="37.2"
+        android:textSize="@dimen/show_size"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="10px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_title_show_check"
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:text="温度显示："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/temp_mode_group"
+        android:layout_margin="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60px">
+        <RadioButton
+            android:text="℃"
+            android:textSize="@dimen/radio_size"
+            android:id="@+id/temp_mode_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:text="°F"
+            android:textSize="@dimen/radio_size"
+            android:id="@+id/temp_mode_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Button
+            android:id="@+id/save_setting"
+            android:background="@drawable/radiobutton"
+            android:textColor="#000000"
+            android:text="确定"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/out_setting"
+            android:background="@drawable/cancel"
+            android:textColor="#000000"
+            android:text="取消"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

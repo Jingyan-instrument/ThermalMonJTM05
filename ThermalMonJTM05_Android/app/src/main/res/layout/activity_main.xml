@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+    <org.opencv.android.JavaCamera2View
+        android:id="@+id/camera"
+        android:layout_width="680px"
+        android:layout_height="800px"
+        app:camera_id="back"
+        app:show_fps="true" />
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/test_camera"
+        android:layout_width="680px"
+        android:layout_height="800px"
+        />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1066px">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/camera_show"
+                android:layout_width="800px"
+                android:layout_height="1066px"/>
+
+            <com.example.face.Tool.MyLineView
+                android:id="@+id/camera_data"
+                android:layout_width="800px"
+                android:layout_height="1066px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="216px"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="left"
+        android:text=""
+        android:id="@+id/test_tv"
+        android:textColor="#00FFFF"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:background="@drawable/logo"
+        android:id="@+id/icon_img"
+        android:clickable="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginBottom="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_width="528px"
+        android:layout_height="122px"/>
+
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="28px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="showSettingDialog"
+        android:background="@drawable/set"
+        android:layout_width="120px"
+        android:layout_height="120px"/>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#FF00FF"
+        android:layout_alignParentRight="true"
+        android:layout_width="320px"
+        android:layout_height="320px">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginBottom="20px"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="528px"
+        android:layout_height="50px">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:textSize="20px"
+                android:layout_width="120px"
+                android:text="Environment: "
+                android:textColor="#999999"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/temp_tv"
+                android:textSize="20px"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:textSize="20px"
+                android:layout_width="120px"
+                android:text="Black Body: "
+                android:textColor="#999999"
+                android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/black_tv"
+                android:textSize="20px"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#999999"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginRight="10px"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:text="V1.22"
+        android:layout_width="wrap_content"
+        android:layout_height="30px"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/img_background"
+        android:background="#FF00FF"
+        android:layout_alignParentBottom="true"
+        android:layout_width="360px"
+        android:layout_height="180px">
+        <ImageView
+            android:id="@+id/img_all_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/img_show_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="1066px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginRight="130px"
+        android:layout_alignParentRight="true"
+        android:layout_width="300px"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/show_size"
+                android:id="@+id/result_text_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:onClick="showCameraSetDialog"
+                android:text="设置相机参数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginTop="10px"
+                android:onClick="changeShowMode"
+                android:text="正常人脸检测"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginTop="10px"
+                android:onClick="sendBlackViewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送出厂命令" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

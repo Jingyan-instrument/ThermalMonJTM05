@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ThermalMonJTM05</string>
+
+    <string name="Arabic">Arabic عربي ، 阿拉伯语 AR</string>
+    <string name="English">English 英文 EN</string>
+    <string name="French">French Français 法语 FR</string>
+    <string name="Japanese">Japanese日本語 日语JA</string>
+    <string name="Spanish">Spanish Español西班牙语 ES</string>
+    <string name="Simplified">Simplified Chinese簡体中文 CN</string>
+    <string name="Traditional">Traditional Chinese繁體中文 HK</string>
+    <string name="Italian">Italian Italiano意大利语IT</string>
+
+</resources>

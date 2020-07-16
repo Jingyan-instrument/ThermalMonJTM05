@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:minWidth="600px"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:text="请选择语言"
+
+        android:id="@+id/language_title"
+        android:textSize="@dimen/title_size"
+        android:layout_margin="20px"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/language_group"
+        android:layout_margin="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/language_arabic"
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/Arabic"/>
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/English"
+            android:id="@+id/language_english"
+            />
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/French"
+            android:id="@+id/language_french"
+
+            />
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/Italian"
+            android:id="@+id/language_Italian"
+            />
+
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/Japanese"
+            android:id="@+id/language_japanese"
+            />
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/Spanish"
+            android:id="@+id/language_spanish"
+
+            />
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/Simplified"
+            android:id="@+id/language_simplified"
+
+            />
+        <RadioButton
+            android:layout_margin="10px"
+            android:textSize="@dimen/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_height"
+            android:text="@string/Traditional"
+            android:id="@+id/language_traditional"
+            />
+
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Button
+            android:id="@+id/language_check"
+            android:background="@drawable/radiobutton"
+            android:textColor="#000000"
+            android:text="确定"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/language_out"
+            android:background="@drawable/cancel"
+            android:textColor="#000000"
+            android:text="取消"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

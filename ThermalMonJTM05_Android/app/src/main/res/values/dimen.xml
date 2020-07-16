@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">30px</dimen>
+    <dimen name="button_size">25px</dimen>
+    <dimen name="show_size">25px</dimen>
+    <dimen name="radio_size">25px</dimen>
+    <dimen name="radio_height">60px</dimen>
+    <dimen name="setting_width">600px</dimen>
+</resources>

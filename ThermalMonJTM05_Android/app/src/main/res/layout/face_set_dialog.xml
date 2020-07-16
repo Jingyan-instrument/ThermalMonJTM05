@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:minWidth="600px"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/face_title_min"
+
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最小人脸宽度（px）："/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/face_min"
+        android:text="0"
+        android:layout_marginBottom="10px"
+
+        android:textSize="45px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/face_title_max"
+
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最大人脸宽度（px）："/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/face_max"
+        android:text="0"
+        android:layout_marginBottom="10px"
+
+        android:textSize="45px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/face_title_wc"
+
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="距离温差补偿："/>
+    <EditText
+        android:inputType="numberSigned|numberDecimal"
+
+        android:id="@+id/face_scale"
+        android:text="0"
+        android:layout_marginBottom="10px"
+
+        android:textSize="45px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/face_title_rate"
+        android:layout_margin="20px"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="人脸识别率（0-100%）："/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/face_config"
+        android:text="0"
+        android:layout_marginBottom="10px"
+
+        android:textSize="45px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Button
+            android:id="@+id/face_save"
+            android:background="@drawable/radiobutton"
+            android:textColor="#000000"
+            android:text="确定"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/out_face"
+            android:background="@drawable/cancel"
+            android:textColor="#000000"
+            android:text="取消"
+            android:textSize="@dimen/button_size"
+            android:layout_margin="20px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
